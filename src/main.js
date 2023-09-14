@@ -1,5 +1,35 @@
-// Este es el punto de entrada de tu aplicacion
+// file main.js
+import home from './lib/home.js';
+import login from './lib/login.js';
+import error from './lib/error.js';
+const routes = [
+    { path: '/', component: home },
+    { path: '/login', component: login },
+    { path: '/error', component: error },
+];
+const defaultRoute = '/';
+const root = document.getElementById('root');
+function navigateTo(hash) {
+    const route = routes.find((routeFound) => routeFound.path === hash);
 
-import { myFunction } from './lib/index.js';
+    if (route && route.component) {
+        window.history.pushState(
+            {},
+            route.path,
+            window.location.origin + route.path,
+        );
 
-myFunction();
+        if (root.firstChild) {
+            root.removeChild(root.firstChild);
+        }
+        root.appendChild(route.component(navigateTo));
+    } else {
+        navigateTo('/error');
+    }
+}
+
+window.onpopstate = () => {
+    navigateTo(window.location.pathname);
+};
+
+navigateTo(window.location.pathname || defaultRoute);

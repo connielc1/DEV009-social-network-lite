@@ -1,0 +1,48 @@
+body {
+    background-color: #F9E4D4;
+    mask-position: absolute;
+}
+
+header {
+    justify-items: center;
+}
+
+h1 {
+    color: #9C0F48;
+    font-family: 'Courier New';
+    text-align: center;
+}
+
+h2 {
+    color: #9C0F48;
+    font-family: 'Courier New';
+}
+
+.login-section {
+    align-items: center;
+    color: #9C0F48;
+    font-family: 'Courier New'
+}
+
+button {
+    background-color: #9C0F48;
+    font-family: 'Courier New';
+    color: #F9E4D4;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.buttonReturn {
+    background-color: transparent;
+    color: #9C0F48;
+    border: 1px solid #9C0F48;
+}
+
+
+input {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #9C0F48;
+}
