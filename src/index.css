@@ -1,37 +1,43 @@
 body {
     background-color: #F9E4D4;
-    mask-position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Courier New';
 }
 
 header {
-    justify-items: center;
-}
-
-h1 {
-    color: #9C0F48;
-    font-family: 'Courier New';
     text-align: center;
 }
 
+h1,
 h2 {
     color: #9C0F48;
-    font-family: 'Courier New';
 }
 
 .login-section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     color: #9C0F48;
-    font-family: 'Courier New'
+    font-family: 'Courier New';
 }
 
 button {
     background-color: #9C0F48;
-    font-family: 'Courier New';
     color: #F9E4D4;
+    border: none;
     border-radius: 3px;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Courier New';
 }
 
 button.buttonReturn {
@@ -40,9 +46,9 @@ button.buttonReturn {
     border: 1px solid #9C0F48;
 }
 
-
 input {
     padding: 5px;
     margin: 5px;
     border: 1px solid #9C0F48;
+    font-family: 'Courier New';
 }

@@ -1,14 +1,16 @@
-// file main.js
-import home from './lib/home.js';
+import createHome from './lib/home.js';
 import login from './lib/login.js';
 import error from './lib/error.js';
+
 const routes = [
-    { path: '/', component: home },
+    { path: '/', component: createHome },
     { path: '/login', component: login },
     { path: '/error', component: error },
 ];
+
 const defaultRoute = '/';
 const root = document.getElementById('root');
+
 function navigateTo(hash) {
     const route = routes.find((routeFound) => routeFound.path === hash);
 

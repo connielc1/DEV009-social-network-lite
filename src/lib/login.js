@@ -1,5 +1,4 @@
-// file login.js
-function login() {
+function login(navigateTo) {
     const section = document.createElement('section');
     const title = document.createElement('h2');
     const buttonReturn = document.createElement('button');
@@ -8,13 +7,16 @@ function login() {
     const inputPass = document.createElement('input');
     const buttonLogin = document.createElement('button');
 
-    inputEmail.placeholder = 'Write email';
-    inputPass.placeholder = 'pass';
+    inputEmail.placeholder = 'Escribe un mail';
+    inputPass.placeholder = 'Contraseña';
 
-    title.textContent = 'Login';
-    buttonLogin.textContent = 'go';
+    title.textContent = 'Acceder';
+    buttonLogin.textContent = '¡Vamos!';
 
-    buttonReturn.textContent = 'Return to home';
+    buttonReturn.textContent = 'Volver al inicio';
+    buttonReturn.addEventListener('click', () => {
+        navigateTo('/');
+    });
 
     form.append(inputEmail, inputPass, buttonLogin);
     section.append(title, form, buttonReturn);
