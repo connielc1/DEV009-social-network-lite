@@ -18,7 +18,7 @@ function register(navigateTo) {
     title.textContent = 'Acceder';
     buttonLogin.textContent = 'Crear cuenta';
     buttonAccess.textContent = 'Acceder'
-    loginText.textContent = '¿Ya tienes una cuenta? Ingresa:'
+    loginText.textContent = '¿Ya tienes una cuenta?'
 
     buttonReturn.textContent = 'Volver al inicio';
     buttonReturn.addEventListener('click', () => {

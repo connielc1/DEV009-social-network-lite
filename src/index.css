@@ -2,32 +2,43 @@ body {
     background-color: #F9E4D4;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     margin: 0;
     font-family: 'Courier New';
+    border-radius: 5px;
 }
 
-header {
+header,
+.login-section {
     text-align: center;
 }
 
 h1,
 h2,
-.login-section,
-button,
-input,
-p {
+p,
+input {
     color: #9C0F48;
     font-family: 'Courier New';
+    text-align: center;
 }
 
 .login-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 1px solid #9C0F48;
+    font-family: 'Courier New';
+    margin-bottom: 15px;
 }
 
 button {
@@ -39,33 +50,27 @@ button {
     cursor: pointer;
     margin-top: 10px;
     text-align: center;
+    font-family: 'Courier New';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 button.buttonReturn {
     background-color: transparent;
     color: #9C0F48;
     border: 1px solid #9C0F48;
+
 }
 
-input {
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid #9C0F48;
-    font-family: 'Courier New';
-    display: block;
-
-    margin-bottom: 10px;
-}
 
 button.buttonAccess {
     padding: 5px;
     margin: 5px;
     border: 1px solid #9C0F48;
     display: block;
-}
+    margin-left: auto;
+    margin-right: auto;
 
-p {
-    color: #9C0F48;
-    font-family: 'Courier New';
-    border-radius: 5px;
 }
