@@ -1,11 +1,12 @@
 import createHome from './lib/home.js';
 import login from './lib/login.js';
 import error from './lib/error.js';
-
+import register from './lib/register.js';
 const routes = [
     { path: '/', component: createHome },
     { path: '/login', component: login },
     { path: '/error', component: error },
+    { path: '/register', component: register},
 ];
 
 const defaultRoute = '/';

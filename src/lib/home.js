@@ -5,7 +5,7 @@ function createHome(navigateTo) {
 
     button.textContent = 'Ingresa';
     button.addEventListener('click', () => {
-        navigateTo('/login');
+        navigateTo('/register');
     });
 
     title.textContent = '¡Bienvenid@!';
