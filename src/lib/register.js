@@ -1,4 +1,6 @@
-function register(navigateTo) {
+import { async } from "regenerator-runtime";
+import { login, register } from "./services";
+function registerView(navigateTo) {
     const section = document.createElement('section');
     const title = document.createElement('h2');
     const buttonReturn = document.createElement('button');
@@ -14,11 +16,20 @@ function register(navigateTo) {
     inputName.placeholder = 'Ingresa tu nombre';
     inputEmail.placeholder = 'Escribe un mail';
     inputPass.placeholder = 'Contraseña';
+    inputPass.type = "password";
+
+    inputName.id = 'nombre';
+    inputEmail.id = 'mail';
+    inputPass.id = 'contraseña';
 
     title.textContent = 'Acceder';
     buttonLogin.textContent = 'Crear cuenta';
     buttonAccess.textContent = 'Acceder'
     loginText.textContent = '¿Ya tienes una cuenta?'
+
+    let name;
+    let email;
+    let password;
 
     buttonReturn.textContent = 'Volver al inicio';
     buttonReturn.addEventListener('click', () => {
@@ -28,7 +39,19 @@ function register(navigateTo) {
     buttonAccess.addEventListener('click', () => {
         navigateTo('/login');
     });
-
+    inputName.addEventListener("input", (e) => {
+        name = e.target.value
+    });
+    inputEmail.addEventListener("input", (e) => {
+        email = e.target.value
+    });
+    inputPass.addEventListener("input", (e) => {
+        password = e.target.value
+    });
+    buttonLogin.addEventListener('click', async(e) => { e.preventDefault()
+        await register(email, password)
+        navigateTo("/login")
+    });
     form.append(inputEmail, inputPass, inputName, buttonLogin);
     loginDiv.append(loginText, buttonAccess);
     section.append(title, form, loginDiv, buttonReturn);
@@ -36,4 +59,4 @@ function register(navigateTo) {
     return section;
 }
 
-export default register;
+export default registerView;
