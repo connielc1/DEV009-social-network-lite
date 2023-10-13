@@ -59,7 +59,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### HTML
 
-- [ ] **Uso de HTML semántico**
+- [x] **Uso de HTML semántico**
 
   <details><summary>Links</summary><p>
 
@@ -69,7 +69,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### CSS
 
-- [ ] **Uso de selectores de CSS**
+- [x] **Uso de selectores de CSS**
 
   <details><summary>Links</summary><p>
 
@@ -77,7 +77,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
 </p></details>
 
-- [ ] **Modelo de caja (box model): borde, margen, padding**
+- [x] **Modelo de caja (box model): borde, margen, padding**
 
   <details><summary>Links</summary><p>
 
@@ -88,7 +88,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
 </p></details>
 
-- [ ] **Uso de flexbox en CSS**
+- [x] **Uso de flexbox en CSS**
 
   <details><summary>Links</summary><p>
 
@@ -107,7 +107,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Web APIs
 
-- [ ] **Uso de selectores del DOM**
+- [x] **Uso de selectores del DOM**
 
   <details><summary>Links</summary><p>
 
@@ -116,7 +116,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Localizando elementos DOM usando selectores - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
 </p></details>
 
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
+- [x] **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
   <details><summary>Links</summary><p>
 
@@ -126,7 +126,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [El objeto Event](https://developer.mozilla.org/es/docs/Web/API/Event)
 </p></details>
 
-- [ ] **Manipulación dinámica del DOM**
+- [x] **Manipulación dinámica del DOM**
 
   <details><summary>Links</summary><p>
 
@@ -147,7 +147,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### JavaScript
 
-- [ ] **Arrays (arreglos)**
+- [x] **Arrays (arreglos)**
 
   <details><summary>Links</summary><p>
 
@@ -160,16 +160,16 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 </p></details>
 
-- [ ] **Objetos (key, value)**
+- [x] **Objetos (key, value)**
 
   <details><summary>Links</summary><p>
 
   * [Objetos en JavaScript](https://curriculum.laboratoria.la/es/topics/javascript/05-objects/01-objects)
 </p></details>
 
-- [ ] **Diferenciar entre tipos de datos primitivos y no primitivos**
+- [x] **Diferenciar entre tipos de datos primitivos y no primitivos**
 
-- [ ] **Variables (declaración, asignación, ámbito)**
+- [x] **Variables (declaración, asignación, ámbito)**
 
   <details><summary>Links</summary><p>
 
@@ -193,7 +193,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Bucles e iteración - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
 </p></details>
 
-- [ ] **Funciones (params, args, return)**
+- [x] **Funciones (params, args, return)**
 
   <details><summary>Links</summary><p>
 
