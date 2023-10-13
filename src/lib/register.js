@@ -1,5 +1,4 @@
-import { async } from "regenerator-runtime";
-import { login, register } from "./services";
+import { register } from "./services";
 function registerView(navigateTo) {
     const section = document.createElement('section');
     const title = document.createElement('h2');
@@ -13,14 +12,14 @@ function registerView(navigateTo) {
     const loginDiv = document.createElement('div');
     const loginText = document.createElement('p');
 
+    inputName.id = 'nombre';
+    inputEmail.id = 'mail';
+    inputPass.id = 'contraseña';
+
     inputName.placeholder = 'Ingresa tu nombre';
     inputEmail.placeholder = 'Escribe un mail';
     inputPass.placeholder = 'Contraseña';
     inputPass.type = "password";
-
-    inputName.id = 'nombre';
-    inputEmail.id = 'mail';
-    inputPass.id = 'contraseña';
 
     title.textContent = 'Acceder';
     buttonLogin.textContent = 'Crear cuenta';
@@ -48,10 +47,12 @@ function registerView(navigateTo) {
     inputPass.addEventListener("input", (e) => {
         password = e.target.value
     });
-    buttonLogin.addEventListener('click', async(e) => { e.preventDefault()
-        await register(email, password)
+    buttonLogin.addEventListener('click', async (e) => {
+        e.preventDefault()
+        await register(name, email, password)
         navigateTo("/login")
     });
+
     form.append(inputEmail, inputPass, inputName, buttonLogin);
     loginDiv.append(loginText, buttonAccess);
     section.append(title, form, loginDiv, buttonReturn);

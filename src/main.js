@@ -2,11 +2,13 @@ import createHome from './lib/home.js';
 import login from './lib/login.js';
 import error from './lib/error.js';
 import registerView from './lib/register.js';
+import homeView from './lib/tinyHome.js';
 const routes = [
     { path: '/', component: createHome },
     { path: '/login', component: login },
     { path: '/error', component: error },
-    { path: '/register', component: registerView},
+    { path: '/register', component: registerView },
+    { path: '/tinyHome', component: homeView },
 ];
 
 const defaultRoute = '/';

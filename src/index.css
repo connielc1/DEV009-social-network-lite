@@ -13,22 +13,27 @@ body {
 header,
 .login-section {
     text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 400px;
 }
 
 h1,
 h2,
+h3,
 p,
 input {
     color: #9C0F48;
     font-family: 'Courier New';
     text-align: center;
+
 }
 
 .login-section {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 input {
@@ -73,4 +78,20 @@ button.buttonAccess {
     margin-left: auto;
     margin-right: auto;
 
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin-left: 20px;
+
+}
+
+button.buttonAccess img h2 {
+    margin-bottom: 5px;
+    margin: 0;
+}
+
+.post-form {
+    font-size: 18px;
 }

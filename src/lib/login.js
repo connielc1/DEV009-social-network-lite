@@ -1,3 +1,6 @@
+let email;
+let password;
+
 function login(navigateTo) {
     const section = document.createElement('section');
     const title = document.createElement('h2');
@@ -9,6 +12,10 @@ function login(navigateTo) {
 
     inputEmail.placeholder = 'Escribe un mail';
     inputPass.placeholder = 'Contraseña';
+    inputPass.type = "password";
+
+    inputEmail.id = 'mail';
+    inputPass.id = 'contraseña';
 
     title.textContent = 'Acceder';
     buttonLogin.textContent = '¡Vamos!';
@@ -16,6 +23,17 @@ function login(navigateTo) {
     buttonReturn.textContent = 'Volver al inicio';
     buttonReturn.addEventListener('click', () => {
         navigateTo('/');
+    });
+    inputEmail.addEventListener("input", (e) => {
+        email = e.target.value;
+    });
+    inputPass.addEventListener("input", (e) => {
+        password = e.target.value;
+    });
+    buttonLogin.addEventListener('click', () => {
+        console.log(email);
+        console.log(password);
+        navigateTo('/tinyHome');
     });
 
     form.append(inputEmail, inputPass, buttonLogin);
