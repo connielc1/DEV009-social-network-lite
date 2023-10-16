@@ -95,3 +95,9 @@ button.buttonAccess img h2 {
 .post-form {
     font-size: 18px;
 }
+
+textarea {
+border-radius: 5px;
+color: #9C0F48;
+
+}
