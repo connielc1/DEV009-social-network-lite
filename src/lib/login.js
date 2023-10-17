@@ -1,7 +1,8 @@
+import { login } from "./services";
 let email;
 let password;
 
-function login(navigateTo) {
+function loginPage(navigateTo) {
     const section = document.createElement('section');
     const title = document.createElement('h2');
     const buttonReturn = document.createElement('button');
@@ -31,10 +32,10 @@ function login(navigateTo) {
         password = e.target.value;
     });
     buttonLogin.addEventListener('click', () => {
-        console.log(email);
-        console.log(password);
+        login(email, password)
         navigateTo('/tinyHome');
     });
+
 
     form.append(inputEmail, inputPass, buttonLogin);
     section.append(title, form, buttonReturn);
@@ -42,4 +43,4 @@ function login(navigateTo) {
     return section;
 }
 
-export default login;
+export default loginPage;

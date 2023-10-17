@@ -1,4 +1,4 @@
-import { getPosts, createPost, editPost, deletePost } from "./services";
+import { getPosts, createPost, editPost, deletePost, getLoggedInUser } from "./services";
 function homeView(navigateTo) {
     const sectionPage = document.createElement('section');
     const formPost = document.createElement('form');
@@ -18,9 +18,15 @@ function homeView(navigateTo) {
         quotes = e.target.value;
         console.log(quotes);
     });
-
-    
-
+    publishButton.addEventListener('click', (e) => {
+        e.preventDefault()
+        const user = getLoggedInUser()
+        console.log(user)
+        createPost(quotes, user.email)
+    });
+    const posts = getPosts()
+    console.log(posts);
+    /** tareita */
     formPost.appendChild(textArea);
     formPost.appendChild(publishButton);
     sectionPage.appendChild(welcome);
@@ -31,8 +37,8 @@ function homeView(navigateTo) {
 
 export default homeView;
 
-/* buttonLogin.addEventListener('click', async (e) => {
-    e.preventDefault()
-    await register(name, email, password)
-    navigateTo("/login")
-}); función ejemplo */ 
+/* buttonLogin.addEventListener('click', (e) => {
+        e.preventDefault()
+        register(name, email, password)
+        navigateTo("/login")
+    }); */ 

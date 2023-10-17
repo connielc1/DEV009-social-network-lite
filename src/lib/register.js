@@ -47,9 +47,9 @@ function registerView(navigateTo) {
     inputPass.addEventListener("input", (e) => {
         password = e.target.value
     });
-    buttonLogin.addEventListener('click', async (e) => {
+    buttonLogin.addEventListener('click', (e) => {
         e.preventDefault()
-        await register(name, email, password)
+        register(name, email, password)
         navigateTo("/login")
     });
 
