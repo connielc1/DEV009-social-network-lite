@@ -26,7 +26,6 @@ input {
     color: #9C0F48;
     font-family: 'Courier New';
     text-align: center;
-
 }
 
 .login-section {
@@ -38,12 +37,53 @@ input {
 
 input {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px auto; 
     padding: 5px;
     border: 1px solid #9C0F48;
     font-family: 'Courier New';
     margin-bottom: 15px;
+}
+
+button {
+    background-color: #9C0F48;
+    color: #F9E4D4;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px auto; 
+    text-align: center;
+    font-family: 'Courier New';
+    display: block;
+}
+
+button.buttonReturn {
+    background-color: transparent;
+    color: #9C0F48;
+    border: 1px solid #9C0F48;
+}
+
+button.buttonAccess {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #9C0F48;
+    display: block;
+    margin: 5px auto; 
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto; 
+}
+
+.post-form {
+    font-size: 18px;
+}
+
+textarea {
+    border-radius: 5px;
+    color: #9C0F48;
 }
 
 button {
@@ -81,9 +121,9 @@ button.buttonAccess {
 }
 
 img {
-    max-width: 90%;
+    max-width: 93%;
     height: auto;
-    margin-left: 20px;
+    margin-left: 25px;
 
 }
 
@@ -94,10 +134,50 @@ button.buttonAccess img h2 {
 
 .post-form {
     font-size: 18px;
+    margin-left: 10px;
 }
 
 textarea {
-border-radius: 5px;
-color: #9C0F48;
+    border-radius: 5px;
+    color: #9C0F48;
+    margin-left: 5px;
 
+}
+
+#contenido {
+    display: grid;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+ul {
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+
+li {
+    list-style-type: none;
+    background-color: #D67D3E;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px;
+}
+
+li p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    grid-column: 1; 
 }

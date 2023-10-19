@@ -47,7 +47,7 @@ function homeView(navigateTo) {
             drawQuotes(element.content);
         });
     }
-
+    //*//*
     formPost.appendChild(textArea);
     formPost.appendChild(publishButton);
     sectionPage.appendChild(welcome);
@@ -58,8 +58,3 @@ function homeView(navigateTo) {
 
 export default homeView;
 
-/* buttonLogin.addEventListener('click', (e) => {
-        e.preventDefault()
-        register(name, email, password)
-        navigateTo("/login")
-    }); */ 
