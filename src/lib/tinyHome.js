@@ -31,23 +31,24 @@ function homeView(navigateTo) {
 
     const posts = getPosts();
     console.log(posts);
-/* tareita */
     const drawQuotes = (quote) => {
         contenedor.innerHTML += `
-            <div>
-                <ul>
-                    <li>${quote}</li>
-                </ul>
+            <div>  
+                <p> ${quote.email}</p>
+                    <p>${quote.content}</p>
+                    <div> 
+                    <button>editar</button> 
+                    <button>borrar</button>
+                    </div>
             </div>
         `;
     }
 
     if (posts) {
         posts.forEach(element => {
-            drawQuotes(element.content);
+            drawQuotes(element);
         });
     }
-    //*//*
     formPost.appendChild(textArea);
     formPost.appendChild(publishButton);
     sectionPage.appendChild(welcome);

@@ -37,7 +37,7 @@ input {
 
 input {
     display: block;
-    margin: 5px auto; 
+    margin: 5px auto;
     padding: 5px;
     border: 1px solid #9C0F48;
     font-family: 'Courier New';
@@ -51,7 +51,7 @@ button {
     border-radius: 3px;
     padding: 10px 20px;
     cursor: pointer;
-    margin: 10px auto; 
+    margin: 10px auto;
     text-align: center;
     font-family: 'Courier New';
     display: block;
@@ -68,13 +68,13 @@ button.buttonAccess {
     margin: 5px;
     border: 1px solid #9C0F48;
     display: block;
-    margin: 5px auto; 
+    margin: 5px auto;
 }
 
 img {
     max-width: 90%;
     height: auto;
-    margin: 20px auto; 
+    margin: 20px auto;
 }
 
 .post-form {
@@ -171,7 +171,7 @@ li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -179,5 +179,5 @@ li p {
     font-size: 16px;
     color: #333;
     margin: 0;
-    grid-column: 1; 
+    grid-column: 1;
 }
