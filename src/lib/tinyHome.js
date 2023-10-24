@@ -33,12 +33,13 @@ function homeView(navigateTo) {
     console.log(posts);
     const drawQuotes = (quote) => {
         contenedor.innerHTML += `
-            <div>  
+            <div class="post">  
                 <p> ${quote.email}</p>
-                    <p>${quote.content}</p>
+                    <p class="user-preview"> ${quote.content}</p>
                     <div> 
-                    <button>editar</button> 
-                    <button>borrar</button>
+                    <div class="actions">
+                <button class="edit-button">Editar</button>
+                <button class="delete-button">Borrar</button>
                     </div>
             </div>
         `;

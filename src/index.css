@@ -155,13 +155,10 @@ textarea {
     text-align: center;
 }
 
-ul {
+li {
     flex-direction: column;
     align-items: center;
     color: aliceblue;
-}
-
-li {
     list-style-type: none;
     background-color: #D67D3E;
     border: 1px solid #ccc;
@@ -169,7 +166,6 @@ li {
     margin: 0 0 20px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -180,4 +176,96 @@ li p {
     color: #333;
     margin: 0;
     grid-column: 1;
+}
+
+#contenido {
+    display: grid;
+    gap: 20px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+li {
+    background-color: #D67D3E;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #F9E4D4;
+    border-radius: 0 0 5px 5px;
+}
+
+.edit-button,
+.delete-button {
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #D67D3E;
+}
+
+.post {
+    background-color: #D67D3E;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px;
+    grid-column: 1;
+    position: relative;
+}
+
+.user-preview {
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #D67D3E;
+    border-radius: 0 0 5px 5px;
+}
+
+.edit-button,
+.delete-button {
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: #9C0F48;
 }
