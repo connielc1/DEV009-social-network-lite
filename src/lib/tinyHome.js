@@ -39,15 +39,29 @@ function homeView(navigateTo) {
                     <div> 
                     <div class="actions">
                 <button class="edit-button">Editar</button>
-                <button class="delete-button">Borrar</button>
+                <button class="delete-button" id=${quote.id}>Borrar</button>
                     </div>
             </div>
         `;
     }
-
     if (posts) {
         posts.forEach(element => {
             drawQuotes(element);
+        });
+        const deleteButtons = document.getElementsByClassName("delete-button")
+        const deleteButtonsArray = Array.from(deleteButtons)
+        console.log(deleteButtonsArray)
+        deleteButtonsArray.forEach(button => {
+            console.log(button)
+            button.addEventListener("click", (element) => {
+                console.log("click",element.target.id)
+            deletePost(element.target.id)
+            const newPosts = getPosts();
+            contenedor.innerHTML = ""
+            newPosts.forEach(element => {
+                drawQuotes(element);
+            });
+            });
         });
     }
     formPost.appendChild(textArea);
