@@ -10,6 +10,8 @@ function loginPage(navigateTo) {
     const inputEmail = document.createElement('input');
     const inputPass = document.createElement('input');
     const buttonLogin = document.createElement('button');
+    const logoutContainer = document.getElementById("logoutContainer");
+    logoutContainer.style.visibility = "hidden";
 
     inputEmail.placeholder = 'Escribe un mail';
     inputPass.placeholder = 'Contraseña';

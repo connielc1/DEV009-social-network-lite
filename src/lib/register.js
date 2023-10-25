@@ -11,6 +11,8 @@ function registerView(navigateTo) {
     const buttonAccess = document.createElement('button');
     const loginDiv = document.createElement('div');
     const loginText = document.createElement('p');
+    const logoutContainer = document.getElementById("logoutContainer");
+    logoutContainer.style.visibility = "hidden";
 
     inputName.id = 'nombre';
     inputEmail.id = 'mail';
@@ -52,6 +54,7 @@ function registerView(navigateTo) {
         register(name, email, password)
         navigateTo("/login")
     });
+
 
     form.append(inputEmail, inputPass, inputName, buttonLogin);
     loginDiv.append(loginText, buttonAccess);

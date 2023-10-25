@@ -1,4 +1,4 @@
-import { getPosts, createPost, editPost, deletePost, getLoggedInUser } from "./services";
+import { getPosts, createPost, deletePost, getLoggedInUser, logout } from "./services";
 
 function homeView(navigateTo) {
     const sectionPage = document.createElement('section');
@@ -7,6 +7,13 @@ function homeView(navigateTo) {
     const publishButton = document.createElement('button');
     const textArea = document.createElement('textarea');
     const contenedor = document.getElementById("contenido");
+    const logoutButton = document.getElementById('logoutButton');
+    const logoutContainer = document.getElementById("logoutContainer");
+    logoutContainer.style.visibility = "visible";
+    logoutButton.addEventListener('click', () => {
+        logout();
+        navigateTo('/login');
+    });
 
     formPost.classList.add('post-form');
     publishButton.textContent = 'Publicar';
@@ -54,16 +61,17 @@ function homeView(navigateTo) {
         deleteButtonsArray.forEach(button => {
             console.log(button)
             button.addEventListener("click", (element) => {
-                console.log("click",element.target.id)
-            deletePost(element.target.id)
-            const newPosts = getPosts();
-            contenedor.innerHTML = ""
-            newPosts.forEach(element => {
-                drawQuotes(element);
-            });
+                console.log("click", element.target.id)
+                deletePost(element.target.id)
+                const newPosts = getPosts();
+                contenedor.innerHTML = ""
+                newPosts.forEach(element => {
+                    drawQuotes(element);
+                });
             });
         });
     }
+
     formPost.appendChild(textArea);
     formPost.appendChild(publishButton);
     sectionPage.appendChild(welcome);

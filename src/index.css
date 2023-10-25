@@ -133,14 +133,14 @@ button.buttonAccess img h2 {
 }
 
 .post-form {
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 28px;
+    margin-right: 10px;
 }
 
 textarea {
     border-radius: 5px;
     color: #9C0F48;
-    margin-left: 5px;
+    margin-left: 0px;
 
 }
 
@@ -176,9 +176,11 @@ li p {
     color: #333;
     margin: 0;
     grid-column: 1;
+    
 }
 
 .post {
+    
     background-color: #D67D3E;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -221,4 +223,11 @@ li p {
     cursor: pointer;
     margin-left: 5px;
     background-color: #9C0F48;
+}
+
+#logoutContainer {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    visibility: hidden;
 }
