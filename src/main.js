@@ -3,38 +3,39 @@ import login from './lib/login.js';
 import error from './lib/error.js';
 import registerView from './lib/register.js';
 import homeView from './lib/tinyHome.js';
+
 const routes = [
-    { path: '/', component: createHome },
-    { path: '/login', component: login },
-    { path: '/error', component: error },
-    { path: '/register', component: registerView },
-    { path: '/tinyHome', component: homeView },
+  { path: '/', component: createHome },
+  { path: '/login', component: login },
+  { path: '/error', component: error },
+  { path: '/register', component: registerView },
+  { path: '/tinyHome', component: homeView },
 ];
 
 const defaultRoute = '/';
 const root = document.getElementById('root');
 
 function navigateTo(hash) {
-    const route = routes.find((routeFound) => routeFound.path === hash);
+  const route = routes.find((routeFound) => routeFound.path === hash);
 
-    if (route && route.component) {
-        window.history.pushState(
-            {},
-            route.path,
-            window.location.origin + route.path,
-        );
+  if (route && route.component) {
+    window.history.pushState(
+      {},
+      route.path,
+      window.location.origin + route.path,
+    );
 
-        if (root.firstChild) {
-            root.removeChild(root.firstChild);
-        }
-        root.appendChild(route.component(navigateTo));
-    } else {
-        navigateTo('/error');
+    if (root.firstChild) {
+      root.removeChild(root.firstChild);
     }
+    root.appendChild(route.component(navigateTo));
+  } else {
+    navigateTo('/error');
+  }
 }
 
 window.onpopstate = () => {
-    navigateTo(window.location.pathname);
+  navigateTo(window.location.pathname);
 };
 
 navigateTo(window.location.pathname || defaultRoute);

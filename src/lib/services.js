@@ -3,7 +3,7 @@
 */
 export const init = () => {
   localStorage.clear();
-}
+};
 
 /*
   This function should return true if the user exists

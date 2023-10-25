@@ -6,7 +6,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Courier New';
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     border-radius: 5px;
 }
 
@@ -24,7 +24,7 @@ h3,
 p,
 input {
     color: #9C0F48;
-    font-family: 'Courier New';
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     text-align: center;
 }
 
@@ -40,35 +40,8 @@ input {
     margin: 5px auto;
     padding: 5px;
     border: 1px solid #9C0F48;
-    font-family: 'Courier New';
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     margin-bottom: 15px;
-}
-
-button {
-    background-color: #9C0F48;
-    color: #F9E4D4;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 10px auto;
-    text-align: center;
-    font-family: 'Courier New';
-    display: block;
-}
-
-button.buttonReturn {
-    background-color: transparent;
-    color: #9C0F48;
-    border: 1px solid #9C0F48;
-}
-
-button.buttonAccess {
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid #9C0F48;
-    display: block;
-    margin: 5px auto;
 }
 
 img {
@@ -95,7 +68,7 @@ button {
     cursor: pointer;
     margin-top: 10px;
     text-align: center;
-    font-family: 'Courier New';
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -120,28 +93,8 @@ button.buttonAccess {
 
 }
 
-img {
-    max-width: 93%;
-    height: auto;
-    margin-left: 25px;
-
-}
-
 button.buttonAccess img h2 {
-    margin-bottom: 5px;
-    margin: 0;
-}
-
-.post-form {
-    font-size: 28px;
-    margin-right: 10px;
-}
-
-textarea {
-    border-radius: 5px;
-    color: #9C0F48;
-    margin-left: 0px;
-
+    margin: 0 0 5px 0;
 }
 
 #contenido {
@@ -176,11 +129,11 @@ li p {
     color: #333;
     margin: 0;
     grid-column: 1;
-    
+
 }
 
 .post {
-    
+
     background-color: #D67D3E;
     border: 1px solid #ccc;
     border-radius: 5px;
