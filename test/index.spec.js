@@ -1,14 +1,14 @@
 import {
   init, logout, register, login, getLoggedInUser, createPost, getPosts, deletePost,
 } from '../src/lib/services.js';
-/* ejemplo de función:
+/* ejemplo de función para usar:
 describe('myFunction', () => {
 it('debería ser una función', () => {
   expect(typeof myFunction).toBe('function');
 });
 }); */
 
-// Simulación de datos necesarios antes de ejecutar los tests (mock)
+// Simulación de datos necesarios antes de ejecutar tests
 beforeEach(() => {
   const users = [{ email: 'usuario@ejemplo.com', password: '123456' }];
   const loggedInUser = { email: 'usuario@ejemplo.com', password: '123456' };
@@ -139,6 +139,15 @@ describe('deletePost function', () => {
     const initialPosts = [
       { id: 'posta', content: 'contenidoa', email: 'usuarioa@ejemplo.com' },
       { id: 'postb', content: 'contenidob', email: 'usuariob@ejemplo.com' },
+      { id: 'postc', content: 'contenidoc', email: 'usuariob@ejemplo.com' },
     ];
+    localStorage.getItem.mockReturnValueOnce(JSON.stringify(initialPosts));
+    const resultPosts = [
+      { id: 'posta', content: 'contenidoa', email: 'usuarioa@ejemplo.com' },
+      { id: 'postb', content: 'contenidob', email: 'usuariob@ejemplo.com' },
+    ];
+
+    const result = deletePost('postc');
+    expect(result).toEqual(resultPosts);
   });
 });

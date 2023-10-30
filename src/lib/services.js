@@ -165,6 +165,7 @@ export const deletePost = (idPost) => {
       const index = posts.indexOf(post);
       posts.splice(index, 1);
       localStorage.setItem("posts", JSON.stringify(posts));
+      return posts;
     }
     else {
       throw new Error("Post does not exist");

@@ -53,7 +53,7 @@ function registerView(navigateTo) {
   });
   buttonLogin.addEventListener('click', (e) => {
     e.preventDefault();
-    register(name, email, password);
+    register(email, password, name);
     navigateTo('/login');
   });
 

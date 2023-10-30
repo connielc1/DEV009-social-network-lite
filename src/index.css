@@ -45,13 +45,15 @@ input {
 }
 
 img {
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
-    margin: 15px auto;
+    margin: 40px;
 }
 
 .post-form {
-    font-size: 18px;
+    font-size: 20px;
+    height: auto;
+    width: auto;
 }
 
 textarea {
