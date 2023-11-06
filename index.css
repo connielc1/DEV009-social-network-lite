@@ -1,0 +1,188 @@
+body {
+    background-color: #F9E4D4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    border-radius: 5px;
+}
+
+header,
+.login-section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 400px;
+}
+
+h1,
+h2,
+h3,
+p,
+input {
+    color: #9C0F48;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    text-align: center;
+}
+
+.login-section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px solid #9C0F48;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    margin: 40px;
+}
+
+.post-form {
+    font-size: 20px;
+    height: auto;
+    width: auto;
+}
+
+textarea {
+    border-radius: 5px;
+    color: #9C0F48;
+}
+
+button {
+    background-color: #9C0F48;
+    color: #F9E4D4;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+button.buttonReturn {
+    background-color: transparent;
+    color: #9C0F48;
+    border: 1px solid #9C0F48;
+
+}
+
+
+button.buttonAccess {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #9C0F48;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+button.buttonAccess img h2 {
+    margin: 0 0 5px 0;
+}
+
+#contenido {
+    display: grid;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+li {
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    list-style-type: none;
+    background-color: #D67D3E;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+li p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    grid-column: 1;
+
+}
+
+.post {
+
+    background-color: #D67D3E;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px;
+    grid-column: 1;
+    position: relative;
+}
+
+.user-preview {
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #D67D3E;
+    border-radius: 0 0 5px 5px;
+}
+
+.edit-button,
+.delete-button {
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: #9C0F48;
+}
+
+#logoutContainer {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    visibility: hidden;
+}
