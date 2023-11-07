@@ -135,7 +135,7 @@ describe('getPosts funcion', () => {
 });
 // Test para eliminar: para la función deletePost
 describe('deletePost function', () => {
-  it('Debería eliminar el post seleccionado', () => {
+  it('Debe eliminar el post seleccionado', () => {
     const initialPosts = [
       { id: 'posta', content: 'contenidoa', email: 'usuarioa@ejemplo.com' },
       { id: 'postb', content: 'contenidob', email: 'usuariob@ejemplo.com' },

@@ -1,3 +1,33 @@
+# Tiny Quotes
+
+Tiny Quotes es una red social creada para los amantes de la literatura. Aquí puedes crear una cuenta y publicar las frases favoritas de tus lecturas en la página principal. Se comparten las frases en el dashboard donde se puede visualizar lo que hayas escrito. 
+
+## Diseño del producto
+![Alt text](image-3.png)
+
+## Paleta de colores
+
+![Alt text](image.png) 
+
+## Logotipo de la red social
+Creado por medio de canvas.
+![Alt text](image-1.png)
+
+### Tipos de usuario
+
+Si bien la red social es para público general, se enfoca en los usuarios que consuman literatura, lean diversos libros y deseen compartir frases que les haya llamado la atención de forma particular. Eso incentiva a que los usuarios puedan diversificar sus lecturas y conocer otro tipo de escritos que se han publicado a lo largo de la historia. 
+
+No hay límite en las frases. Pueden ser frases de novelas, cuentos, poesía y el género también es amplio acorde la elección de lo que el usuario desee publicar en la página principal.
+
+### Historias de usuario
+1. El usuario necesita crear una cuenta. 
+Para ello, existe la primera página de la aplicación SPA. En ella, aparece el registro con distintos llenados y botones que guian al usuario a registrar su cuenta con un email, contraseña y nombre que desee agregar. 
+2. El usuario necesita acceder a su cuenta, estando previamente creada. 
+Para ello, existe un botón debajo de la zona de registro, con un apartado "¿Ya tienes cuenta? Acceder" con un botón que lleva a un llenado de información sólo con el email y contraseña que el usuario ingrese. 
+3. El usuario debe ingresar al dashboard y poder escribir en la página. El usuario al ingresar tendrá un apartado con un área de texto para escribir lo que desee publicar y debajo de ello, un botón para poder subir su contenido. 
+4. El usuario debe ver su publicación y tener la posibilidad de eliminarla. Al estar subida la publicación, puede que el usuario por diferentes motivos desee eliminar la publicación. Para ello, existe el botón de "borrar" donde sólo será eliminada la publicación seleccionada, dejando el dashboard con el contenido de los otros usuarios impecable. 
+
+
 # Creando una Red Social
 
 ## Índice

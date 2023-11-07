@@ -14,12 +14,12 @@ export default defineConfig(({ command }) => {
       // para fazer uma implantação github pages, defina a propriedade base
       // para o nome/url do seu repositório
       // https://vitejs.dev/guide/static-deploy.html#github-pages
-      // ejemplo base: '/social-network/',
+        base: '/DEV009-social-network-lite/',
       build: {
         minify: false,
         rollupOptions: {
           output: {
-            dir: './dist',
+            dir: './lib',
           },
         },
       },
