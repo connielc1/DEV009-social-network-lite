@@ -1,6 +1,8 @@
 # Tiny Quotes
 
-Tiny Quotes es una red social creada para los amantes de la literatura. Aquí puedes crear una cuenta y publicar las frases favoritas de tus lecturas en la página principal. Se comparten las frases en el dashboard donde se puede visualizar lo que hayas escrito. 
+Tiny Quotes es una red social creada para los amantes de la literatura. Aquí puedes crear una cuenta y publicar las frases favoritas de tus lecturas en la página principal. Se comparten las frases en el dashboard donde se puede visualizar lo que hayas escrito. La idea es compartir variedad de gustos en libros, cuentos, novelas, poesía y muchos más en un espacio especial. 
+## Página web
+A través de este [enlace](https://654bb33d6fa3a70008dab97a--dulcet-fox-3a676d.netlify.app) puedes acceder a la red social TinyQuotes. Recuerda crear una cuenta para poder acceder. Al publicar, puede aparecer la publicación sin la vista previa, por lo que recomiendo cerrar sesión y entrar nuevamente para poder visualizarlo mejor (es algo que resolveré más adelante).
 
 ## Diseño del producto
 ![Alt text](image-3.png)
