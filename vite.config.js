@@ -19,7 +19,7 @@ export default defineConfig(({ command }) => {
         minify: false,
         rollupOptions: {
           output: {
-            dir: './lib',
+            dir: './dist',
           },
         },
       },
